@@ -15,8 +15,9 @@ const images = [
 
 const gallery = document.querySelector("ul.gallery");
 
+// prettier-ignore
 const galleryItemsMarkup = images
-  .map((url, alt) => {
+  .map(({ url, alt }) => {
     return `<li class="gallery-item"><img src="${url}" alt="${alt}"></li>`;
   })
   .join("");

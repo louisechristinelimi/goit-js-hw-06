@@ -7,5 +7,5 @@ const listItems = document.querySelectorAll(".item");
 
 listItems.forEach((listItem) => {
   console.log(`Category: ${listItem.querySelector("h2").textContent}`);
-  console.log(`Elements: ${listItem.querySelectorAll("li").length}`);
+  console.log("Elements:", listItem.querySelectorAll("li").length);
 });
